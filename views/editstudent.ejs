@@ -1,0 +1,320 @@
+<%- include('partials/studentheader') %>
+<form class="main" id="studentform" action="/editstudent" method="post">
+
+  <div class="row main">
+    <h1></h1>
+    <h2>Personal Details</h2>
+
+
+
+
+    <div class="row ">
+      <div class="input-field col s6" required="" aria-required="true">
+        <select name="selectpickeryear">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">First Year</option>
+          <option value="2">Second Year</option>
+          <option value="3">Third Year</option>
+        </select>
+        <label>Select year</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="full_name" type="text" name="fullname" class="validate" required="" aria-required="true">
+        <label for="full_name">Full Name</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" input-field col s6">
+        <input id="marksheet_name" type="text" name="marksheetname" class="validate" required="" aria-required="true">
+        <label for="marksheet_name">Name as printed on SSC/HSC marksheet</label>
+      </div>
+      <div class=" input-field col s6">
+        <input id="aadharnumber" type="text" name="aadharnumber" class="validate" required="" aria-required="true" data-length="12">
+        <span id="user"></span>
+        <label for="aadharnumber">Addhar Card Number</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 inline">
+        <label for="Gender">Gender:</label>
+        <label>
+          <input type="radio" name="gender2" value="Female" />
+          <span>Female</span>
+        </label>
+
+        <label>
+          <input type="radio" name="gender2" value="Male" />
+          <span>Male</span>
+        </label>
+      </div>
+      <div class="col s6 inline">
+        <input type="text" class="datepicker" required="" aria-required="true" name="dateofbirth">
+        <label for="birth_date">Date of Birth</label>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="birth_place" type="text" class="validate" required="" aria-required="true" name="placeofbirth">
+        <label for="birth_place">Place of Birth</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="nationality" type="text" class="validate" required="" aria-required="true" name="nationality">
+        <label for="nationality">Nationality</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6 inline">
+        <input id="mobile_number" type="text" class="validate" required="" aria-required="true" data-length="10" name="mobile">
+        <label for="mobile_number">Number</label>
+      </div>
+
+      <div class="input-field col s6 inline">
+        <input id="email" type="email" class="validate" required="" aria-required="true" name="email">
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="wrong" data-success="right">Valid mail id</span>
+      </div>
+    </div>
+
+
+
+
+    <div class="">
+      <div class="input-field col s6">
+        <select name="selectpicker" required="" aria-required="true">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="divorce">divorce</option>
+        </select>
+        <label>Marital Status</label>
+      </div>
+
+      <div class="input-field col s6">
+        <input id="employment" type="text" class="validate" name="employment">
+        <label for="employment">Employment Status</label>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="religion" type="text" class="validate" required="" aria-required="true" name="religion">
+        <label for="religion">Religion</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="mother_tongue" type="text" class="validate" required="" aria-required="true" name="mothertongue">
+        <label for="mother_tongue">Mother Tongue</label>
+      </div>
+    </div>
+
+
+        <div class="row col s12">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" required="" aria-required="true" name="address"></textarea>
+            <label for="textarea1">Address</label>
+          </div>
+        </div>
+
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate" required="" aria-required="true" name="password">
+        <label for="password">Password</label>
+      </div>
+    </div>
+
+<!-- here -->
+
+
+    <h3>Mother Details</h3>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="mother_namex" type="text" class="validate" required="" aria-required="true" name="mothernamex">
+        <label for="mother_namex">Full Name</label>
+      </div>
+
+      <div class="input-field col s6 inline">
+        <input id="mother_number" type="text" class="validate" required="" aria-required="true" name="mothernumber">
+        <label for="mother_number">Number</label>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6 inline">
+        <input id="mother_email" type="email" class="validate" required="" aria-required="true" name="motheremail">
+        <label for="mother_email">Email</label>
+        <span class="helper-text" data-error="wrong" data-success="right">Valid mail id</span>
+      </div>
+
+
+      <div class="input-field col s6 inline">
+        <select name="motheredu">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Primary</option>
+          <option value="2">Secondary</option>
+          <option value="3">Higher-secondary</option>
+          <option value="3">U.Grad</option>
+        </select>
+        <label>Education</label>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="input-field col s6 inline">
+        <select name="motherincome">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">below 50000</option>
+          <option value="2">below 100000</option>
+          <option value="3">below 500000</option>
+          <option value="3">above 50000</option>
+        </select>
+        <label>Family Income</label>
+      </div>
+      <div class="input-field col s6 inline">
+        <input id="ocupation" type="text" class="validate" required="" aria-required="true" name="motherocc">
+        <label for="ocupation">Ocupation</label>
+      </div>
+    </div>
+
+
+
+
+        <div class="row col s12">
+          <div class="input-field col s12">
+            <textarea id="mother_textarea1" class="materialize-textarea" required="" aria-required="true" name="motheraddress"></textarea>
+            <label for="mother_textarea1">Address</label>
+          </div>
+        </div>
+
+
+<!-- End -->
+    <h2>Parents Details</h2>
+
+
+
+
+    <h3>Father Details</h3>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="father_name" type="text" class="validate" required="" aria-required="true" name="fathername">
+        <label for="father_name">Full Name</label>
+      </div>
+
+      <div class="input-field col s6 inline">
+        <input id="father_number" type="text" class="validate" required="" aria-required="true" name="fathernumber">
+        <label for="father_number">Number</label>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6 inline">
+        <input id="father_email" type="email" class="validate" required="" aria-required="true" name="fatheremail">
+        <label for="father_email">Email</label>
+        <span class="helper-text" data-error="wrong" data-success="right">Valid mail id</span>
+      </div>
+
+
+      <div class="input-field col s6 inline" required="" aria-required="true">
+        <select name="fatheredu">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Primary</option>
+          <option value="2">Secondary</option>
+          <option value="3">Higher-secondary</option>
+          <option value="3">U.Grad</option>
+        </select>
+        <label>Education</label>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="input-field col s6 inline" required="" aria-required="true">
+        <select name="fatherincome">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">below 50000</option>
+          <option value="2">below 100000</option>
+          <option value="3">below 500000</option>
+          <option value="3">above 50000</option>
+        </select>
+        <label>Family Income</label>
+      </div>
+      <div class="input-field col s6 inline">
+        <input id="ocupationx" type="text" class="validate" required="" aria-required="true" name="fatherocc">
+        <label for="ocupationx">Ocupation</label>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="father_textarea1" class="materialize-textarea" required="" aria-required="true" name="fatheraddress"></textarea>
+            <label for="father_textarea1">Address</label>
+          </div>
+        </div>
+    </div>
+
+
+<h3>Academic</h3>
+      <div class="row">
+        <div class="input-field col s6" required="" aria-required="true">
+          <select name="selectpickerx">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="State board">State board</option>
+            <option value="CBSC">CBSC</option>
+            <option value="IGCSC">IGCSC</option>
+          </select>
+          <label>10th: Board / University</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="10percentage" name="percentagex" type="number" min="1" max="100" step="0.01" class="validate" required="" aria-required="true">
+          <label for="10percentage">Percentage</label>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="input-field col s6" required="" aria-required="true">
+          <select name="selectpickerxx" >
+            <option value="" disabled selected>Choose your option</option>
+            <option value="State board">State board</option>
+            <option value="CBSC">CBSC</option>
+            <option value="IGCSC">IGCSC</option>
+          </select>
+          <label>12th: Board / University</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="12percentage"  name="percentagexx" type="number" min="1" max="100" step="0.01" class="validate" required="" aria-required="true">
+          <label for="12percentage">Percentage</label>
+        </div>
+      </div>
+
+
+
+
+  </div class="row main" >
+  <div class="">
+    <button class="btn waves-effect waves-light" id="submit" type="submit" name="Submit" >Submit
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+<%- include('partials/studentfooter') %>

@@ -1,0 +1,49 @@
+<%- include('partials/teacherheader') -%>
+<div class=" myclassx">
+  <div class="main">
+
+    <table class="striped">
+            <thead>
+              <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>Teacher ID</th>
+                  <th>Month</th>
+                  <th>Attendance</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <%
+                     if(userData.length!=0){
+
+                     userData.forEach(function(data){
+                     %>
+                     <tr>
+                        <td><%=data.id; %></td>
+                         <td><%=data.fullname; %></td>
+                         <td><%=data.teacherID; %></td>
+                         <td><%=data.Month %></td>
+                         <td><%=data.Attendance %></td>
+                         <td>
+                           <a class="waves-effect waves-light btn red" href="/studentatt/<%=data.id; %>"><i class="material-icons">delete</i></a>
+                          </td>
+                     <%   }); %>
+
+                     <% } else{ %>
+                        </tr>
+                         <tr>
+                             <td colspan="7">No Data Found</td>
+                         </tr>
+                     <% } %>
+
+            </tbody>
+          </table>
+
+
+
+  </div>
+</div>
+
+<%- include('partials/teacherfooter') -%>

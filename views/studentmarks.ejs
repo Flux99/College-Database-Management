@@ -1,0 +1,53 @@
+<%- include('partials/studentheader') %>
+
+<div class="main">
+<h2>Marks</h2>
+  <table class="striped">
+          <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>SubjectCode</th>
+                <th>Marks</th>
+                <th>TeacherID</th>
+                <th>Sem</th>
+                <th>Year</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <%
+                   if(userData){
+
+                   userData.forEach(function(data){
+                   %>
+                   <tr>
+                      <td><%=data.id; %></td>
+                       <td><%=data.fullname; %></td>
+                       <td><%=data.subjectcode; %></td>
+                       <td><%=data.Marks; %></td>
+                       <td><%=data.teacherID; %></td>
+                       <td><%=data.Sem; %></td>
+                       <td><%=data.Year; %></td>
+                       <td>
+                         <a class="waves-effect waves-light btn red" href="/studentatt/<%=data.id; %>"><i class="material-icons">delete</i></a>
+                        </td>
+                   <%   }); %>
+
+                   <% } else{ %>
+                      </tr>
+                       <tr>
+                           <td colspan="7">No Data Found</td>
+                       </tr>
+                   <% } %>
+
+          </tbody>
+        </table>
+
+
+
+</div>
+
+
+<%- include('partials/studentfooter') %>

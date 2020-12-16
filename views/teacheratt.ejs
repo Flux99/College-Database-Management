@@ -1,0 +1,101 @@
+<%- include('partials/teacherheader') -%>
+
+<form class=" main " id="subject"action="/att" method="post">
+
+<div class="row main ">
+
+<div class="row ">
+  <div class="input-field col l4 s6">
+    <input id="fullname" type="text" name="fullname" class="validate" required="" aria-required="true">
+    <label for="fullname">Full Name</label>
+  </div>
+  <div class="input-field col l4 s6" required="" aria-required="true">
+    <select name="month">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+      <option value="January">January</option>
+      <option value="Febuary">Febuary</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+    </select>
+    <label>Select Sem</label>
+  </div>
+  </div>
+
+<div class="row ">
+  <div class="input-field col l4 s6">
+    <input id="attendance" type="number" name="attendance" class="validate" required="" aria-required="true">
+    <label for="attendance">Attendance</label>
+  </div>
+
+  <div class="input-field col l4 s6">
+    <input id="emp_id" type="text" name="empid" class="validate" required="" aria-required="true">
+    <label for="emp_id">TeacherID</label>
+  </div>
+
+  </div>
+
+  <div class="row">
+  <div class="row col l4 s6">
+    <button class="btn waves-effect waves-light" type="submit" id ="submit" class="submit" name="action">Submit
+    </button>
+  </div>
+
+</div>
+</div>
+</form>
+<div class=" myclassx">
+  <div class="main">
+
+    <table class="striped">
+            <thead>
+              <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>Teacher ID</th>
+                  <th>Month</th>
+                  <th>Attendance</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <%
+                     if(userData.length!=0){
+
+                     userData.forEach(function(data){
+                     %>
+                     <tr>
+                        <td><%=data.id; %></td>
+                         <td><%=data.fullname; %></td>
+                         <td><%=data.teacherID; %></td>
+                         <td><%=data.Month %></td>
+                         <td><%=data.Attendance %></td>
+                         <td>
+                           <a class="waves-effect waves-light btn red" href="/studentatt/<%=data.id; %>"><i class="material-icons">delete</i></a>
+                          </td>
+                     <%   }); %>
+
+                     <% } else{ %>
+                        </tr>
+                         <tr>
+                             <td colspan="7">No Data Found</td>
+                         </tr>
+                     <% } %>
+
+            </tbody>
+          </table>
+
+
+
+  </div>
+</div>
+<br><br>
+<%- include('partials/teacherfooter') -%>

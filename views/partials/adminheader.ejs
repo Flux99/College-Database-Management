@@ -1,0 +1,51 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Compiled and minified CSS -->
+    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+    <!-- Compiled and minified JavaScript -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+<!-- Dropdown Structure Start -->
+
+     <!-- Dropdown Structure End-->
+   <ul id="dropdown1" class="dropdown-content">
+      <li><a  href="/">Edit</a></li>
+      <li><a id="delete" href="#!">delete</a></li>
+      <li class="divider"></li>
+      <li><a  href="/Logout">Logout</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+       <li><a  href="/adminteacher">Details</a></li>
+       <li><a href="/adminteachersub" href="#!">Subject</a></li>
+    <!--   <li class="divider"></li>
+        <li><a  href="#!">Logout</a></li> -->
+     </ul>
+     <ul id="dropdown2" class="dropdown-content">
+        <li><a  href="/adminstudent">Details</a></li>
+        <li><a  href="/studentsub">Subject</a></li>
+        <li><a  href="/studentatt">Attendance</a></li>
+      <!--  <li class="divider"></li>
+         <li><a  href="#!">Logout</a></li> -->
+      </ul>
+    <nav>
+      <div class="nav-wrapper  orange darken-1">
+        <a href="/" class="brand-logo">Logo</a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a class="myclass"href="#!">Sass</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown3"><i class="material-icons right"></i>Teachers</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons right"></i>Student</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><%=user%><i class="material-icons right">settings</i><%=user%></a></li>
+        </ul>
+       </div>
+       <div  id="tabs"class="row">
+
+  </div>
+    </nav>

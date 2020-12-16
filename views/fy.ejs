@@ -1,0 +1,50 @@
+<%- include('partials/teacherheader') -%>
+
+<form class="" action="/fy" method="post">
+  <div class="row main">
+
+<div class="row">
+  <div class="input-field col s6 inline">
+    <input id="mobile_number" type="text" class="validate" required="" aria-required="true" data-length="10" name="mobile">
+    <label for="mobile_number">Teacher ID</label>
+  </div>
+</div>
+
+<div class="row">
+
+
+    <div class="input-field col s6" required="" aria-required="true">
+      <select name="selectpickersem">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Sem I</option>
+        <option value="2">Sem II</option>
+      </select>
+      <label>Select Sem</label>
+    </div>
+</div>
+<div class="row">
+
+
+    <div class="input-field col s6" required="" aria-required="true">
+      <select name="selectpickersub">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Subject 01</option>
+        <option value="2">Subject 02</option>
+        <option value="3">Subject 03</option>
+        <option value="4">Subject 04</option>
+        <option value="5">Subject 05</option>
+        <option value="6">Subject 06</option>
+      </select>
+      <label>Select Subject</label>
+    </div>
+    </div>
+    <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+      </button>
+    </div>
+  </div>
+
+</form>
+
+
+<%- include('partials/teacherfooter') -%>

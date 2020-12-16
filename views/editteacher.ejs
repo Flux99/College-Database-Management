@@ -1,0 +1,84 @@
+<%- include('partials/teacherheader') %>
+
+<form class="main" id="target" action="/editteacher" method="post">
+<div class="row main">
+
+<h3>Personal Details</h3>
+
+    <div class="row ">
+      <div class="input-field col s6">
+        <input id="emp_id" type="text" name="empid" class="validate" required="" aria-required="true">
+        <label for="emp_id">Employment Id</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="full_name" type="text" name="fullname" class="validate" required="" aria-required="true">
+        <label for="full_name">Full Name</label>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class=" input-field col s6">
+        <input id="aadharnumber" type="text" name="aadharnumber" class="validate" required="" aria-required="true" data-length="12">
+        <span id="user"></span>
+        <label for="aadharnumber">Addhar Card Number</label>
+      </div>
+
+          <div class="row col s6">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" required="" aria-required="true" name="address"></textarea>
+              <label for="textarea1">Address</label>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s6 inline">
+        <label for="Gender">Gender:</label>
+        <label>
+          <input type="radio" name="gender2" value="Female" />
+          <span>Female</span>
+        </label>
+
+        <label>
+          <input type="radio" name="gender2" value="Male" />
+          <span>Male</span>
+        </label>
+      </div>
+      <div class="col s6 inline">
+        <input type="text" class="datepicker" required="" aria-required="true" name="dateofbirth">
+        <label for="birth_date">Date of Birth</label>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6 inline">
+        <input id="mobile_number" type="text" class="validate" required="" aria-required="true" data-length="10" name="mobile">
+        <label for="mobile_number">Number</label>
+      </div>
+
+      <div class="input-field col s6 inline">
+        <input id="email" type="email" class="validate" required="" aria-required="true" name="email">
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="wrong" data-success="right">Valid mail id</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate" required="" aria-required="true" name="password">
+        <label for="password">Password</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" class="teacherregi" name="action">Submit
+      </button>
+    </div>
+    </div>
+
+
+</form>
+
+<%- include('partials/teacherfooter') -%>

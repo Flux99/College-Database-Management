@@ -1,0 +1,49 @@
+<%- include('partials/studentheader') %>
+
+<div class="main">
+<h2>Semester</h2>
+  <table class="striped">
+          <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Sem</th>
+                <th>SemCGPA</th>
+                <th>semKT</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <%
+                   if(userData){
+
+                   userData.forEach(function(data){
+                   %>
+                   <tr>
+                      <td><%=data.id; %></td>
+                       <td><%=data.fullname; %></td>
+                       <td><%=data.sem; %></td>
+                       <td><%=data.semCGPA %></td>
+                       <td><%=data.semKT %></td>
+                       <td>
+                         <a class="waves-effect waves-light btn red" href="/studentatt/<%=data.id; %>"><i class="material-icons">delete</i></a>
+                        </td>
+                   <%   }); %>
+
+                   <% } else{ %>
+                      </tr>
+                       <tr>
+                           <td colspan="7">No Data Found</td>
+                       </tr>
+                   <% } %>
+
+          </tbody>
+        </table>
+
+
+
+</div>
+
+
+<%- include('partials/studentfooter') %>

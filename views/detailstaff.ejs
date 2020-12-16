@@ -1,0 +1,61 @@
+<%- include('partials/adminheader') %>
+<div class="main">
+
+  <table class="striped">
+          <thead>
+            <tr>
+                <th>Employment ID</th>
+                <th>Full Name</th>
+                <th>Aadharcard</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <%
+                   if(userData.length!=0){
+
+                   userData.forEach(function(data){
+                   %>
+                   <tr>
+                       <td><%=data.TeacherID; %></td>
+                       <td><%=data.fullname %></td>
+                       <td><%=data.Aadharcard %></td>
+                       <td><%=data.address %></td>
+                       <td><%=data.gender %></td>
+                       <td><%=data.dateofbirth %></td>
+                       <td><%=data.phoneNumber %></td>
+                       <td><%=data.email %></td>
+                       <td>
+                         <a class="waves-effect waves-light btn red" href="/user/<%=data.TeacherID%>"><i class="material-icons">delete</i></a>
+                        </td>
+                   <%   }) %>
+
+                   <% } else{ %>
+                      </tr>
+                       <tr>
+                           <td colspan="7">No Data Found</td>
+                       </tr>
+                   <% } %>
+
+
+            <!-- <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+            </tr> -->
+
+          </tbody>
+        </table>
+
+
+
+</div>
+
+
+<%- include('partials/adminfooter') %>

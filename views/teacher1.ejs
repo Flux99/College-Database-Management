@@ -1,0 +1,74 @@
+<%- include('partials/teacherheader') -%>
+
+<form class=" main " id="attendance" action="index.html" method="post">
+
+<div class="row main ">
+
+<div class="row ">
+  <div class="input-field col l4 s6" required="" aria-required="true">
+    <!-- <select name="selectpickeryear">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="First">First</option>
+      <option value="Second">Second</option>
+      <option value="Third">Third</option>
+    </select> -->
+    <input type="text"name="month"  id="datepicker99"class="datepicker datepicker99" required="" aria-required="true" name="dateofbirth">
+    <label for="month">Month</label>
+  </div>
+  <div class="input-field col l4 s6" required="" aria-required="true">
+    <select name="selectpickersem">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="Sem1">Sem1</option>
+      <option value="Sem2">Sem2</option>
+      <option value="Sem3">Sem3</option>
+      <option value="Sem4">Sem4</option>
+      <option value="Sem5">Sem5</option>
+      <option value="Sem6">Sem6</option>
+    </select>
+    <label>Select Sem</label>
+  </div>
+  </div>
+
+<div class="row ">
+  <div class="input-field col l4 s6">
+    <input id="full_name" type="text" name="fullname" class="validate" required="" aria-required="true">
+    <label for="full_name">Full Name</label>
+  </div>
+  <div class="input-field col l4 s6">
+    <input id="emp_id" type="text" name="empid" class="validate" required="" aria-required="true">
+    <label for="emp_id">TeacherID</label>
+  </div>
+
+  </div>
+
+<div class="row">
+
+  <div class="input-field col l4 s6">
+    <input id="subjectcode" type="number" name="subjectcode" class="validate" min="1" max="7" step="1" required="" aria-required="true">
+    <label for="subjectcode">Subjectcode</label>
+  </div>
+  <div class=" row input-field col l4 s6">
+    <input id="marks" type="number" name="marks" class="validate" required="" aria-required="true">
+    <label for="marks">Marks</label>
+  </div>
+  </div>
+
+  <div class="row">
+  <div class="row col l4 s6">
+    <button class="btn waves-effect waves-light" type="submit" id ="submit" class="submit" name="action">Submit
+    </button>
+  </div>
+  <div class="row col l4 s6">
+    <button class="firstyear btn waves-effect waves-light" type="submit" id ="find" class="find" name="action">Find
+    </button>
+  </div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+//  alert("Load was performed ");
+
+
+</script>
+
+<%- include('partials/teacherfooter') -%>
