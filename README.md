@@ -2,7 +2,7 @@
 
 ## Description
 
-#### This was my first project college database management system Student can Register ,Login to see their Attendence ,subject Marks.Teacher can Register,Login to find and enter the student marks and Attendence.Admin can see Student Marks and Attendence also which teacher is assign to which student.
+#### This was my first project college database management system Student can Register ,Login to see their Attendence ,subject Marks.Teacher can Register,Login to find and enter the student marks and Attendence.Admin can see Student Marks and Attendence also which teacher is assign to which student.Passwords are hash using bcrypt.
 
 ### Modules
 
