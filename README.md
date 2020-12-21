@@ -22,9 +22,6 @@
 
 - Html/css
 
-## Sequence Diagram
-
-![Screenshot_1](https://github.com/Flux99/E-commerce/blob/master/e-COMMERCE.jpg?raw=true)
 
 ## How to run
 
@@ -60,4 +57,17 @@
 
 - nodemon
 
-![Screenshot_1](https://github.com/Flux99/E-commerce/blob/master/e-COMMERCE.jpg?raw=true)
+## What app will look like
+
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_1.jpeg?raw=true)
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_2.jpeg?raw=true)
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_3.jpeg?raw=true)
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_4.jpeg?raw=true)
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_5.jpeg?raw=true)
+
+![Screenshot_1](https://github.com/Flux99/College-Database-Management/blob/master/Screenshots/Screenshot_6.jpeg?raw=true)
