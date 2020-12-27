@@ -2,7 +2,7 @@
 
 ## Description
 
-#### This was my first project college database management system Student can Register ,Login to see their Attendence ,subject Marks.Teacher can Register,Login to find and enter the student marks and Attendence.Admin can see Student Marks and Attendence also which teacher is assign to which student.Passwords are hash using bcrypt.
+#### This was my first project college database management system Student can Register, login to see their Attendance, subject Marks. The teacher can Register, login to find, and enter the student marks and Attendance. Admin can see Student Marks and Attendance also which teacher is assigned to which student. Passwords are hash using bcrypt.
 
 ### Modules
 
@@ -35,13 +35,13 @@
 
 ## User Stories
 
-- Student can Register with Unique Aaadhar card number ,Login to see their Attendence ,subject Marks.
+- Students can Register with a Unique Aaadhar card number, Login to see their Attendance, subject Marks.
 
-- Teacher can Register with their Unique TeacherId Provided by college,Login to find and enter the student marks and Attendence.
+- The teacher can Register with their Unique TeacherId Provided by the college, Login to find and enter the student marks and Attendance.
 
-- Admin can see every student's subjects and attendence ,which teacher is assigned to which student.Admin can create notice to Show on home page.
+- Admin can see every student's subjects and attendance, which the teacher is assigned to which student. Admin can create a notice to Show on the home page.
 
-- Alumni can also create account and set CurrentJob,CurrentCity & CurrentStatus visible to other Alumni.Alumni can also see other Alumni account.
+- Alumni can also create an account and set CurrentJob, CurrentCity & CurrentStatus visible to other Alumni. Alumni can also see other Alumni account.
 
 ## Dependencies
 
