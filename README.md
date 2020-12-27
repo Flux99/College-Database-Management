@@ -41,8 +41,6 @@
 
 - Admin can see every student's subjects and attendance, which the teacher is assigned to which student. Admin can create a notice to Show on the home page.
 
-- Alumni can also create an account and set CurrentJob, CurrentCity & CurrentStatus visible to other Alumni. Alumni can also see other Alumni account.
-
 ## Dependencies
 
 - express
