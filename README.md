@@ -39,7 +39,7 @@
 
 - The teacher can Register with their Unique TeacherId Provided by the college, Login to find and enter the student marks and Attendance.
 
-- Admin can see every student's subjects and attendance, which the teacher is assigned to which student. Admin can create a notice to Show on the home page.
+- Admin can see and edit every student's subjects and attendance and also which the teacher is assigned to which student.
 
 ## Dependencies
 
