@@ -3,6 +3,7 @@
 ## Description
 
 #### This was my first project college database management system Student can Register, login to see their Attendance, subject Marks. The teacher can Register, login to find, and enter the student marks and Attendance. Admin can see Student Marks and Attendance also which teacher is assigned to which student. Passwords are hash using bcrypt.
+deployed link: https://college-database-management.herokuapp.com/
 
 ### Modules
 
